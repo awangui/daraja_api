@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = "https://fierce-brushlands-62676-a814aa0d6d34.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://fierce-brushlands-62676-a814aa0d6d34.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
